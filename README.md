@@ -1,1 +1,2 @@
 # dev-metacoin
+test
