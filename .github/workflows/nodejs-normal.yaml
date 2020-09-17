@@ -1,0 +1,28 @@
+name: Node CI
+
+on: [push, pull_request]
+
+jobs:
+  build-and-standard-tests:
+
+    runs-on: ${{ matrix.os }}
+    
+    if: github.event.pull_request.draft == false
+
+    strategy:
+      matrix:
+        node-version: [10]
+        os: [ubuntu-latest]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Install Truffle
+      run: npm i -g truffle
+    - name: Compile
+      run: truffle compile
+    - name: Test
+      run: truffle test
