@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/seesemichaelj/dev-metacoin#readme",
   "devDependencies": {
-    "truffle": "^5.0.13"
+    "truffle": "5.0.13"
   }
 }
