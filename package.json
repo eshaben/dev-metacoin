@@ -1,0 +1,26 @@
+  
+{
+  "name": "dev-metacoin",
+  "version": "1.0.0",
+  "description": "Metacoin",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "truffle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seesemichaelj/dev-metacoin.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seesemichaelj/dev-metacoin/issues"
+  },
+  "homepage": "https://github.com/seesemichaelj/dev-metacoin#readme",
+  "devDependencies": {
+    "truffle": "5.0.13"
+  }
+}
